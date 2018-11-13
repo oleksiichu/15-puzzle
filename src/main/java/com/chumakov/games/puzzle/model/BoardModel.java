@@ -19,7 +19,7 @@ import java.util.stream.IntStream;
 public class BoardModel {
   private static final int SHUFFLE_FACTOR = 3;
   private static final int BOARD_SIZE = 4;
-  private static final int TILES_COUNT = 16;
+  private static final int TILES_COUNT = BOARD_SIZE * BOARD_SIZE;
   private static final int EMPTY_TILE_VALUE = 0;
   private static final int NOT_FOUND_VALUE = -1;
 

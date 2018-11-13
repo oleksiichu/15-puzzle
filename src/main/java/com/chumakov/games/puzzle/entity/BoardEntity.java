@@ -2,6 +2,7 @@ package com.chumakov.games.puzzle.entity;
 
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ public class BoardEntity {
   @Id
   @GeneratedValue
   private int id;
-  @ElementCollection
+  @ElementCollection(fetch = FetchType.EAGER)
   private List<Integer> tiles;
 
   public BoardEntity() {
