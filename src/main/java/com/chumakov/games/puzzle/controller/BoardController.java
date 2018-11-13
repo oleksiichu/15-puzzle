@@ -26,14 +26,14 @@ public class BoardController {
       produces = {MediaType.APPLICATION_JSON_VALUE}
   )
   public BoardEntity getBoard(@PathVariable("id") int id) {
-    return this.boardService.getBoard(id);
+    return boardService.getBoard(id);
   }
 
   @PutMapping(
       produces = {MediaType.APPLICATION_JSON_VALUE}
   )
   public BoardEntity createBoard() {
-    return this.boardService.createBoard();
+    return boardService.createBoard();
   }
 
   @PostMapping(
@@ -45,6 +45,6 @@ public class BoardController {
       @PathVariable("id") int id,
       @PathVariable("col") int col,
       @PathVariable("row") int row) {
-    return this.boardService.updateBoard(id, col, row);
+    return boardService.updateBoard(id, col, row);
   }
 }

@@ -25,11 +25,11 @@ public class BoardEntity {
   }
 
   public int getId() {
-    return this.id;
+    return id;
   }
 
   public List<Integer> getTiles() {
-    return this.tiles;
+    return tiles;
   }
 
   public void setTiles(List<Integer> tiles) {
@@ -46,12 +46,12 @@ public class BoardEntity {
     }
     else {
       BoardEntity otherBoard = (BoardEntity) other;
-      return this.id == otherBoard.id && this.tiles.equals(otherBoard.tiles);
+      return id == otherBoard.id && tiles.equals(otherBoard.tiles);
     }
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(this.id, this.tiles);
+    return Objects.hash(id, tiles);
   }
 }

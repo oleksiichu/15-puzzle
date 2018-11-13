@@ -40,7 +40,7 @@ public class BoardControllerTest {
 
   @Test
   public void getBoardTest() throws Exception {
-    given(this.boardController.getBoard(1)).willReturn(board);
+    given(boardController.getBoard(1)).willReturn(board);
 
     mvc.perform(MockMvcRequestBuilders.get("/boards/1").contentType(MediaType.APPLICATION_JSON))
         .andExpect(MockMvcResultMatchers.status().isOk())
@@ -51,7 +51,7 @@ public class BoardControllerTest {
 
   @Test
   public void updateBoardTest() throws Exception {
-    given(this.boardController.updateBoard(1, 1, 1)).willReturn(board);
+    given(boardController.updateBoard(1, 1, 1)).willReturn(board);
 
     mvc.perform(MockMvcRequestBuilders.post("/boards/1/1/1").contentType(MediaType.APPLICATION_JSON))
         .andExpect(MockMvcResultMatchers.status().isOk())
@@ -62,7 +62,7 @@ public class BoardControllerTest {
 
   @Test
   public void createBoardTest() throws Exception {
-    given(this.boardController.createBoard()).willReturn(board);
+    given(boardController.createBoard()).willReturn(board);
 
     mvc.perform(MockMvcRequestBuilders.put("/boards").contentType(MediaType.APPLICATION_JSON))
         .andExpect(MockMvcResultMatchers.status().isOk())
