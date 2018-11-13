@@ -1,0 +1,73 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Maven
+target
+
+# Eclipse
+.classpath*
+.settings
+.project
+.sonarlint
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEA
+.idea
+*.iml
+
+# vim
+*.swp
+
+# etc
+export/java/gen/
+compiler_impl/java/gen/
+compiler_impl/java/gen/META-INF/sun-jaxb.episode
+compiler_impl/java/gen/com/here/nds/data/ti/gen/Locale.java
+compiler_impl/java/gen/com/here/nds/data/ti/gen/ObjectFactory.java
+poi/java/gen/
+dbunit/log/
+
+.vscode/
+.metadata/
+.recommenders/
+
+# generated datascript docu
+com.navteq.nds.rds_2_4_2/etc/ndsdoc/
+
+#netbeans
+compiler_impl/nb-configuration.xml
+nb-configuration.xml
+com.navteq.nds.rds_2_4_2/
+compiler_impl/nbproject/
+export/nbproject/
+poi/nbproject
+dbunit/nbproject
+/unittest/nbproject/
+/export/export
+
+# configuration jenkins gradle binary
+configuration/util/jenkins/statistics/bin
